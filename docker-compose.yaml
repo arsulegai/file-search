@@ -17,7 +17,7 @@ services:
   file-reader:
     build:
       context: .
-    container_name: file-reader
+    container_name: file-search
     ports:
       - 8080:8080
     expose:
