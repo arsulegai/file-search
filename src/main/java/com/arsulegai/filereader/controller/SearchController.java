@@ -1,7 +1,6 @@
 package com.arsulegai.filereader.controller;
 
 import com.arsulegai.filereader.service.SearchService;
-import org.checkerframework.checker.guieffect.qual.SafeType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

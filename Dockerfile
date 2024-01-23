@@ -1,7 +1,7 @@
 FROM openjdk:18-jdk-oracle
 
 RUN mkdir /app
-COPY ./target/file-reader.jar /app
+COPY ./target/file-search.jar /app
 
 WORKDIR /app
 
@@ -16,4 +16,4 @@ USER 10000
 ENV spring_config_location=file:///usr/local/config/application.yml
 ENV JAVA_OPTS="$JAVA_OPTS -Xms1024m -Xmx4096m -Dspring.config.location=${spring_config_location}"
 
-ENTRYPOINT java -jar hlf-connector.jar $JAVA_OPTS
+ENTRYPOINT java -jar file-search.jar $JAVA_OPTS
